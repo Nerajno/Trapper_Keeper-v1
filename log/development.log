@@ -8782,3 +8782,7 @@ puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.7) lib/puma/server.rb:472:in `process_client'
 puma (4.3.7) lib/puma/server.rb:328:in `block in run'
 puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE "my_database_development" ENCODING = 'unicode'[0m
+  [1m[35m (11.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "my_database_development"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "my_test_database"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "my_database_development" ENCODING = 'unicode'[0m
