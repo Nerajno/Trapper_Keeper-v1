@@ -5,8 +5,8 @@ ruby '2.7.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
-
-
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -40,6 +40,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+<<<<<<< HEAD
 
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.4', '>= 1.4.2'
@@ -48,6 +49,8 @@ end
 #online stuff 
 group :production do 
   gem 'pg', '~> 0.18.4'
+=======
+>>>>>>> parent of 4997d8fe... added postgres to production and moved sqlite to dev
 end
 
 group :test do
@@ -63,8 +66,12 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 #mystuff
+<<<<<<< HEAD
 #used for pswd integration
 gem 'devise', '~> 4.2', ">= 4.7.3" 
 
 #db migration helper
 gem 'yaml_db'
+=======
+gem 'devise', '~> 4.2', ">= 4.7.3" #used for 
+>>>>>>> parent of 4997d8fe... added postgres to production and moved sqlite to dev
