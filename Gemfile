@@ -42,7 +42,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 
   # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4', '>= 1.4.2'
+  gem 'sqlite3', '~> 1.4', '>= 1.4.2'
 end
 
 #online stuff 
@@ -63,4 +63,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 #mystuff
-gem 'devise', '~> 4.2', ">= 4.7.3" #used for pswd integration
+#used for pswd integration
+gem 'devise', '~> 4.2', ">= 4.7.3" 
+
+#db migration helper
+gem 'yaml_db'
