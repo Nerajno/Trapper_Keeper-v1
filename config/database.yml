@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # SQLite. Versions 3.8.0 and up are supported.
 #   gem install sqlite3
 #
@@ -15,46 +14,28 @@
   
 
 development:
+   <<: *default
   adapter: postgresql
   encoding: unicode
-  database: my_database_development
+  database: my_development_db
   pool: 5 
   username: nerajno
   password: 
   timeout: 5000
 
-=======
-development:
-  adapter: postgresql
-  encoding: unicode
-  database: my_development_
-  pool: 5
-  username: nerajno
-  password: 
-  host: localhost
->>>>>>> bkUp4sqlite
 
 test:
   adapter: postgresql
   encoding: unicode
-<<<<<<< HEAD
   database: my_test_database
   pool: 5
   username: nerajno
   password:
   timeout: 5000
-=======
-  database: my_test
-  pool: 5
-  username: nerajno
-  password: 
-  host: localhost
->>>>>>> bkUp4sqlite
 
 production:
   adapter: postgresql
   encoding: unicode
-<<<<<<< HEAD
   database: my_production_database
   pool: 5
   username: nerajno
@@ -65,10 +46,3 @@ production:
 # production:
 #   <<: *default
 #   database: db/my_database_production
-=======
-  database: my_production
-  pool: 5
-  username: nerajno
-  password: 
-  host: localhost
->>>>>>> bkUp4sqlite

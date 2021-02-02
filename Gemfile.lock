@@ -60,11 +60,7 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     bcrypt (3.1.16)
     bindex (0.8.1)
-<<<<<<< HEAD
-    bootsnap (1.6.0)
-=======
     bootsnap (1.7.0)
->>>>>>> bkUp4sqlite
       msgpack (~> 1.0)
     builder (3.2.4)
     byebug (11.1.3)
@@ -108,23 +104,13 @@ GEM
     mini_mime (1.0.2)
     mini_portile2 (2.5.0)
     minitest (5.14.3)
-<<<<<<< HEAD
-    msgpack (1.4.1)
-=======
     msgpack (1.4.2)
->>>>>>> bkUp4sqlite
     nio4r (2.5.4)
     nokogiri (1.11.1)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     orm_adapter (0.5.0)
-<<<<<<< HEAD
     pg (0.18.4)
-<<<<<<< HEAD
-=======
-=======
->>>>>>> parent of 4997d8fe... added postgres to production and moved sqlite to dev
->>>>>>> bkUp4sqlite
     public_suffix (4.0.6)
     puma (4.3.7)
       nio4r (~> 2.0)
@@ -193,10 +179,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-<<<<<<< HEAD
-=======
     sqlite3 (1.4.2)
->>>>>>> bkUp4sqlite
     thor (1.1.0)
     thread_safe (0.3.6)
     tilt (2.0.10)
@@ -240,12 +223,14 @@ DEPENDENCIES
   devise (~> 4.2, >= 4.7.3)
   jbuilder (~> 2.7)
   listen (~> 3.2)
+  pg (~> 0.18.4)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.4)
   sass-rails (>= 6)
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
+  sqlite3 (~> 1.4, >= 1.4.2)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)
