@@ -9,7 +9,7 @@
 #   adapter: sqlite3
 #   encoding: unicode
 #   username: nerajno
-#   pool: 5
+#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 #   timeout: 5000
   
 
@@ -19,7 +19,7 @@ development:
   database: friends_development
   pool: 5 
   username: nerando
-  password:
+  password: 
   timeout: 5000
 
 
