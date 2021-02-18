@@ -17,9 +17,10 @@ development:
   adapter: postgresql
   encoding: unicode
   database: friends_development
-  pool: 5 
-  username: nerando
-  password: 
+  pool: 5
+  host: 127.0.0.1
+  username: postgres
+  password: sp00gy
   timeout: 5000
 
 
@@ -28,18 +29,15 @@ test:
   encoding: unicode
   database: friends_test
   pool: 5
-  username: nerando
-  password: 
+  host: 127.0.0.1
+  username: postgres
+  password: sp00gy
   timeout: 5000
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: friends_production
-  pool: 5
-  username: nerando
-  password: 
-  timeout: 5000
+  url: <%= ENV['DATABASE_URL'] %>
 # host: localhost
   
 # production:
