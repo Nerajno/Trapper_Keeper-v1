@@ -78,3 +78,42 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 4981)
 
 
+Started GET "/" for ::1 at 2021-02-19 21:10:35 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 693)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 518)
+Completed 200 OK in 96ms (Views: 82.2ms | ActiveRecord: 0.0ms | Allocations: 21622)
+
+
+Started GET "/" for ::1 at 2021-02-19 21:16:03 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 170)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 4289)
+
+
+Started GET "/" for ::1 at 2021-02-19 21:53:35 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 693)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.5ms | Allocations: 515)
+Completed 200 OK in 49ms (Views: 38.2ms | ActiveRecord: 0.0ms | Allocations: 11989)
+
+
+Started GET "/" for ::1 at 2021-02-19 21:54:46 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 693)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.2ms | Allocations: 515)
+Completed 200 OK in 38ms (Views: 27.0ms | ActiveRecord: 0.0ms | Allocations: 11991)
+
+
