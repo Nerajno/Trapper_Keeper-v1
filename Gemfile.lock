@@ -148,7 +148,7 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    regexp_parser (2.0.3)
+    regexp_parser (2.1.0)
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
@@ -235,7 +235,7 @@ DEPENDENCIES
   yaml_db
 
 RUBY VERSION
-   ruby 2.5.8p224
+   ruby 3.0.0p0
 
 BUNDLED WITH
-   2.2.11
+   2.2.3

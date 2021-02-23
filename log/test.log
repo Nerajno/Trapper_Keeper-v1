@@ -207,3 +207,109 @@ INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token"
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
   [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "ae62d1120bed8cc8c02925e914a525668a89011f"], ["created_at", "2021-02-20 01:34:09.030956"], ["updated_at", "2021-02-20 01:34:09.030956"]]
   [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (70.6ms)[0m  [1m[35mTRUNCATE TABLE "friends", "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "friends" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (66.5ms)[0m  [1m[35mTRUNCATE TABLE "friends", "users"[0m
+  [1m[35m (66.9ms)[0m  [1m[35mTRUNCATE TABLE "friends", "users"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "friends" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[35m (67.9ms)[0m  [1m[35mTRUNCATE TABLE "friends", "users"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "friends" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "friends" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.8ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2021-02-21 17:03:48.806842', '2021-02-21 17:03:48.806842', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2021-02-21 17:03:48.806842', '2021-02-21 17:03:48.806842', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2021-02-21 17:03:48.814006', '2021-02-21 17:03:48.814006'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2021-02-21 17:03:48.814006', '2021-02-21 17:03:48.814006')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.5ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2021-02-21 17:03:48.816455', '2021-02-21 17:03:48.816455', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2021-02-21 17:03:48.816455', '2021-02-21 17:03:48.816455', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2021-02-21 17:03:48.822810', '2021-02-21 17:03:48.822810'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2021-02-21 17:03:48.822810', '2021-02-21 17:03:48.822810')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.8ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2021-02-21 17:03:48.816130', '2021-02-21 17:03:48.816130', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2021-02-21 17:03:48.816130', '2021-02-21 17:03:48.816130', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2021-02-21 17:03:48.823286', '2021-02-21 17:03:48.823286'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2021-02-21 17:03:48.823286', '2021-02-21 17:03:48.823286')[0m
+  [1m[35m (2.6ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2021-02-21 17:03:48.816487', '2021-02-21 17:03:48.816487', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2021-02-21 17:03:48.816487', '2021-02-21 17:03:48.816487', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2021-02-21 17:03:48.823947', '2021-02-21 17:03:48.823947'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2021-02-21 17:03:48.823947', '2021-02-21 17:03:48.823947')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2021-02-21 17:03:48.856569', '2021-02-21 17:03:48.856569', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2021-02-21 17:03:48.856569', '2021-02-21 17:03:48.856569', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2021-02-21 17:03:48.856654', '2021-02-21 17:03:48.856654'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2021-02-21 17:03:48.856654', '2021-02-21 17:03:48.856654')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2021-02-21 17:03:48.856684', '2021-02-21 17:03:48.856684', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2021-02-21 17:03:48.856684', '2021-02-21 17:03:48.856684', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2021-02-21 17:03:48.856755', '2021-02-21 17:03:48.856755'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2021-02-21 17:03:48.856755', '2021-02-21 17:03:48.856755')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2021-02-21 17:03:48.880046', '2021-02-21 17:03:48.880046', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2021-02-21 17:03:48.880046', '2021-02-21 17:03:48.880046', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2021-02-21 17:03:48.880170', '2021-02-21 17:03:48.880170'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2021-02-21 17:03:48.880170', '2021-02-21 17:03:48.880170')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2021-02-21 17:03:48.882167', '2021-02-21 17:03:48.882167', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2021-02-21 17:03:48.882167', '2021-02-21 17:03:48.882167', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2021-02-21 17:03:48.882280', '2021-02-21 17:03:48.882280'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2021-02-21 17:03:48.882280', '2021-02-21 17:03:48.882280')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
