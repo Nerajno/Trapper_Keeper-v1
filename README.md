@@ -7,11 +7,12 @@
 - [ ] Add thing to rails app to keep it awake on Heroku.
 - [ ] Write a completed ReadMe ~ See below.
 - [ ] Integrate tests.
-- [ ] Get it reviewed by others.
+- [x] Get it reviewed by others.
 - [ ] Add CI/CD or action for continous deployment via github to Heroku.
 - [ ] Add image uploader/avatar generator for each friend created. 
 - [ ] Add image uploader/avatar generator for each user created. 
 - [ ] Add user stories and do a sketch for app usage. 
+- [ ] Look into api calling 1ce call
 
 
 ### ReadMe Creation
