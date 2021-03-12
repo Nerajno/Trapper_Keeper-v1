@@ -268,3 +268,97 @@ Entrypoint application = js/application-c229f7c7014cf8c8d494.js js/application-c
 Completed 200 OK in 2854ms (Views: 2853.5ms | ActiveRecord: 0.0ms | Allocations: 16231)
 
 
+Started GET "/" for ::1 at 2021-03-02 10:07:21 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 646)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.6ms | Allocations: 560)
+Completed 200 OK in 53ms (Views: 41.2ms | ActiveRecord: 0.0ms | Allocations: 16464)
+
+
+Started GET "/" for ::1 at 2021-03-11 07:52:17 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 750)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.7ms | Allocations: 560)
+Completed 200 OK in 122ms (Views: 110.0ms | ActiveRecord: 0.0ms | Allocations: 37835)
+
+
+Started GET "/" for ::1 at 2021-03-11 17:27:57 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 84)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 7449)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap.
+        on line 18:2 of app/assets/stylesheets/application.scss
+>>  @import "bootstrap";
+
+   -^
+):
+     9:       <%= csrf_meta_tags %>
+    10:     <%= csp_meta_tag %>
+    11: 
+    12:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15:   <body>
+  
+app/assets/stylesheets/application.scss:18
+app/views/layouts/application.html.erb:12
+Started GET "/" for ::1 at 2021-03-11 17:30:10 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 646)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 565)
+Completed 200 OK in 4647ms (Views: 4637.8ms | ActiveRecord: 0.0ms | Allocations: 105185)
+
+
+Started GET "/" for ::1 at 2021-03-11 21:20:19 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 646)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/nerajno/Development/code/otherLearn/ffcRails/friends/public/packs
+[Webpacker] warning ../../../../package.json: No license field
+
+[Webpacker] Hash: 27f22c40a44c9984591a
+Version: webpack 4.45.0
+Time: 6942ms
+Built at: 03/11/2021 9:20:32 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-32eaf9a46652ed81421c.js   1.32 MiB  application  [emitted] [immutable]  application
+js/application-32eaf9a46652ed81421c.js.map   1.45 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-32eaf9a46652ed81421c.js js/application-32eaf9a46652ed81421c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 993 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 672 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 8 hidden modules
+
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 565)
+Completed 200 OK in 12354ms (Views: 12344.8ms | ActiveRecord: 0.0ms | Allocations: 92703)
+
+
+Started GET "/" for ::1 at 2021-03-11 21:20:49 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 83)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 174)
+Completed 200 OK in 3307ms (Views: 3306.7ms | ActiveRecord: 0.0ms | Allocations: 70397)
+
+
