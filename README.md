@@ -12,7 +12,7 @@
 - [ ] Add image uploader/avatar generator for each friend created. 
 - [ ] Add image uploader/avatar generator for each user created. 
 - [ ] Add user stories and do a sketch for app usage. 
-- [ ] Look into api calling 1ce call
+- [x] Look into api calling 1ce call
 
 
 ### ReadMe Creation
