@@ -362,3 +362,217 @@ Processing by FriendsController#index as HTML
 Completed 200 OK in 3307ms (Views: 3306.7ms | ActiveRecord: 0.0ms | Allocations: 70397)
 
 
+Started GET "/" for ::1 at 2021-03-12 06:12:40 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 646)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 560)
+Completed 200 OK in 70ms (Views: 62.0ms | ActiveRecord: 0.0ms | Allocations: 29415)
+
+
+Started GET "/" for ::1 at 2021-03-12 06:44:07 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 174)
+Completed 200 OK in 3475ms (Views: 3473.8ms | ActiveRecord: 0.0ms | Allocations: 70425)
+
+
+Started GET "/" for ::1 at 2021-03-12 06:44:11 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 83)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 174)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 7792)
+
+
+Started GET "/" for ::1 at 2021-03-12 06:46:20 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 174)
+Completed 200 OK in 3407ms (Views: 3406.4ms | ActiveRecord: 0.0ms | Allocations: 69492)
+
+
+Started GET "/" for ::1 at 2021-03-12 06:47:26 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 174)
+Completed 200 OK in 3297ms (Views: 3295.9ms | ActiveRecord: 0.0ms | Allocations: 70353)
+
+
+Started GET "/" for ::1 at 2021-03-12 07:09:33 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 386)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 490)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.0ms | Allocations: 9759)
+
+
+Started GET "/" for ::1 at 2021-03-12 07:29:09 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 174)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 7658)
+
+
+Started GET "/" for ::1 at 2021-03-12 08:14:54 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 381)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 492)
+Completed 200 OK in 3814ms (Views: 3812.8ms | ActiveRecord: 0.0ms | Allocations: 71947)
+
+
+Started GET "/" for ::1 at 2021-03-12 09:09:34 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 83)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 174)
+Completed 200 OK in 3159ms (Views: 3158.5ms | ActiveRecord: 0.0ms | Allocations: 69492)
+
+
+Started GET "/" for ::1 at 2021-03-12 09:12:37 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 83)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 174)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 7636)
+
+
+Started GET "/" for ::1 at 2021-03-12 09:24:52 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 387)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.4ms | Allocations: 486)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms | Allocations: 9654)
+
+
+Started GET "/" for ::1 at 2021-03-12 14:53:16 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 385)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 486)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 9769)
+
+
+Started GET "/" for ::1 at 2021-03-12 15:21:22 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 83)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 174)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 7641)
+
+
+Started GET "/" for ::1 at 2021-03-12 15:34:30 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 83)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 174)
+Completed 200 OK in 3311ms (Views: 3309.9ms | ActiveRecord: 0.0ms | Allocations: 69553)
+
+
+Started GET "/" for ::1 at 2021-03-12 16:05:06 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 386)
+Completed 500 Internal Server Error in 326ms (ActiveRecord: 0.0ms | Allocations: 20107)
+
+
+  
+ActionView::Template::Error (Error: property "fled" must be followed by a ':'
+        on line 34:5 of app/assets/stylesheets/application.scss
+>>     fled
+
+   ----^
+):
+     9:       <%= csrf_meta_tags %>
+    10:     <%= csp_meta_tag %>
+    11: 
+    12:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15:   <body>
+  
+app/assets/stylesheets/application.scss:34
+app/views/layouts/application.html.erb:12
+Started GET "/" for ::1 at 2021-03-12 16:05:19 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.6ms | Allocations: 489)
+Completed 200 OK in 3231ms (Views: 3230.5ms | ActiveRecord: 0.0ms | Allocations: 69993)
+
+
+Started GET "/" for ::1 at 2021-03-12 16:07:09 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 381)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 487)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 9678)
+
+
+Started GET "/" for ::1 at 2021-03-12 16:13:42 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 83)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 174)
+Completed 200 OK in 3212ms (Views: 3210.8ms | ActiveRecord: 0.0ms | Allocations: 69519)
+
+
+Started GET "/" for ::1 at 2021-03-12 16:17:31 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 174)
+Completed 200 OK in 3180ms (Views: 3178.7ms | ActiveRecord: 0.0ms | Allocations: 70383)
+
+
+Started GET "/" for ::1 at 2021-03-12 16:31:23 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 83)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 174)
+Completed 200 OK in 3233ms (Views: 3232.3ms | ActiveRecord: 0.0ms | Allocations: 69949)
+
+
+Started GET "/" for ::1 at 2021-03-12 17:48:06 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 393)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 486)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 9792)
+
+
+Started GET "/home/about" for ::1 at 2021-03-12 17:48:24 -0500
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 95)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 244)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 8530)
+
+
