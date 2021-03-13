@@ -146,7 +146,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 - [ ] Add CI/CD or action for continous deployment via github to Heroku.
 - [ ] Add image uploader/avatar generator for each friend created. 
 - [ ] Add image uploader/avatar generator for each user created. 
-- [ ] Add user stories and do a sketch for app usage.
+- [ ] Add user stories and do a sketch for app usage. 
+
 
 
 ### ReadMe Creation
