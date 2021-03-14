@@ -17,21 +17,26 @@
 
  @import "bootstrap";
 
-.navbar {
-    padding-left: 1.5em;
-    display: flex;
+ .navbar {
+	padding-left: 1.5em;
+	display: flex;
+	&:hover {
+		color: yellow;
+	}
 }
-
+.bg-dark {
+	flex-wrap: inherit !important;
+}
 .navbar-brand {
-    margin-left: 5em;
+	margin-left: 1.75em;
 }
-
 #navbarSupportedContent {
-    // justify-content: space-around;
-    margin-right: 5em;
+	margin-right: 5em;
 }
 
-.navbar:hover {
-    color: yellow;
-}
 
+// @media (min-width: 320px){
+//     .navbar {
+//         flex-flow: nowrap;
+//     }
+// }
