@@ -30,10 +30,10 @@ Created to act as demonstrator for a mobile compatible fullstack Rails app. It u
 
 
 ## Acknowledgments
-**[Meg Gutshall](https://github.com/meg-gutshall/)** ~ for this ReadMe template and pointers to figure out whats wrong.
-**[Mike Rogers](https://mikerogers.io/)** ~ for being my go-to person when stuff breaks and I need another pair of eyes.
-**[Tun](https://github.com/tunkhine126)** ~ helping me when the structure of things are off.
-**[Alex](https://github.com/meg-gutshall/)** ~ pushing me to become a better dev.
+- **[Meg Gutshall](https://github.com/meg-gutshall/)** ~ for this ReadMe template and pointers to figure out whats wrong.
+- **[Mike Rogers](https://mikerogers.io/)** ~ for being my go-to person when stuff breaks and I need another pair of eyes.
+- **[Tun](https://github.com/tunkhine126)** ~ helping me when the structure of things are off.
+- **[Alex](https://github.com/meg-gutshall/)** ~ pushing me to become a better dev.
 
 
 ## License
