@@ -12,7 +12,7 @@ Live version ~> [TrapperKeepr](https://trapperkeepr.herokuapp.com/)
 Created to act as demonstrator for a mobile compatible fullstack Rails app. It utlizes the [devise gem](https://github.com/heartcombo/devise) for authorization and authentication, Bootstrap for styling, Postgresql for datbase purposes, Heroku for hosting and a configured cron-job to heroku based readily available.
 
 ## Screenshots/Demo
-
+![ScreenShot of the app](https://github.com/Nerajno/Trapper_Keeper/blob/main/app/assets/images/AppScreenshots/trapperkeepr.png)
 
 ## Built With
 
