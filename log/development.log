@@ -1235,3 +1235,23 @@ Processing by FriendsController#index as HTML
 Completed 200 OK in 2972ms (Views: 2970.1ms | ActiveRecord: 0.0ms | Allocations: 73483)
 
 
+Started GET "/" for ::1 at 2021-03-15 08:20:45 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 654)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 561)
+Completed 200 OK in 3875ms (Views: 3867.1ms | ActiveRecord: 0.0ms | Allocations: 105180)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-03-15 08:21:13 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 605)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 13.8ms | Allocations: 4837)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.4ms | Allocations: 200)
+Completed 200 OK in 62ms (Views: 36.2ms | ActiveRecord: 9.5ms | Allocations: 19000)
+
+
