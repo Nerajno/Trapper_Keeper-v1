@@ -69,9 +69,7 @@ SOFTWARE.
 - [x] Format the navbar for a better look.... Remove Search item.
 - [x] Add thing to rails app to keep it awake on Heroku.  
 - [x] Get it reviewed by others.
-- [ ] Get it reviewed by others.... again
-- [ ] Change colors via color theory to fit the project's target audience.
-- [ ] Fix about us and the other page.
+- [x] Get it reviewed by others.... again
 - [x] Write a completed ReadMe ~ See below.
 - [ ] Integrate tests.
 - [x] Add CI/CD or action for continous deployment via github to Heroku.
@@ -81,4 +79,6 @@ SOFTWARE.
 - [ ] Add other usecases to this ReadMe.  
 - [ ] Add a version badge.
 - [ ] Add a website up or down badge.
+- [ ] Change colors via color theory to fit the project's target audience.
+- [ ] Fix about us and the other page.
 
