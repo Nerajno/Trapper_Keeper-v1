@@ -15,7 +15,6 @@ Created to act as demonstrator for a mobile compatible fullstack Rails app. It u
 ![ScreenShot of the app](https://github.com/Nerajno/Trapper_Keeper/blob/main/app/assets/images/AppScreenshots/trapperkeepr.png)
 
 ## Built With
-
 - [Ruby](https://ruby-doc.org/) ~ this app utilises Ruby 3.0.0.
 - [Rails](https://guides.rubyonrails.org/)
 - [Postgresql](https://www.postgresql.org/docs/13/index.html) ~ this app utilises vesion 12 of Posgresql.
@@ -24,7 +23,6 @@ Created to act as demonstrator for a mobile compatible fullstack Rails app. It u
 - [Devise gem](https://github.com/heartcombo/devise) ~ for authorization/authentication.
 
 ## Features
-
 - Users can create, update and delete a profile for their selves, it also has the capability for password recovery.
 - Users have the ability to create profiles, update profiles for their friends and delete these profiles.
 
@@ -37,7 +35,6 @@ Created to act as demonstrator for a mobile compatible fullstack Rails app. It u
 
 
 ## License
-
 This project is licensed under the MIT License.
 MIT License
 
@@ -75,7 +72,7 @@ SOFTWARE.
 - [x] Add CI/CD or action for continous deployment via github to Heroku.
 - [ ] Add image uploader/avatar generator for each friend created. 
 - [ ] Add image uploader/avatar generator for each user created. 
-- [ ] ~Add user stories and do a sketch for app usage. 
+- [ ] Add user stories and do a sketch for app usage. 
 - [ ] Add other usecases to this ReadMe.  
 - [ ] Add a version badge.
 - [ ] Add a website up or down badge.

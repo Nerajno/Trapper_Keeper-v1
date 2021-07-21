@@ -1255,3 +1255,170 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 62ms (Views: 36.2ms | ActiveRecord: 9.5ms | Allocations: 19000)
 
 
+Started GET "/" for ::1 at 2021-07-21 15:20:17 -0400
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 654)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.8ms | Allocations: 556)
+Completed 200 OK in 121ms (Views: 113.5ms | ActiveRecord: 0.0ms | Allocations: 38530)
+
+
+Started GET "/" for ::1 at 2021-07-21 15:20:21 -0400
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 83)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 174)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 7657)
+
+
+Started GET "/" for ::1 at 2021-07-21 15:23:12 -0400
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 83)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 174)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 7666)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-07-21 15:42:14 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.7ms | Allocations: 605)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 15.2ms | Allocations: 4838)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 201)
+Completed 200 OK in 63ms (Views: 31.5ms | ActiveRecord: 8.6ms | Allocations: 19119)
+
+
+Started GET "/" for ::1 at 2021-07-21 15:47:04 -0400
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 174)
+Completed 200 OK in 3495ms (Views: 3494.2ms | ActiveRecord: 0.0ms | Allocations: 77766)
+
+
+Started GET "/" for ::1 at 2021-07-21 15:47:39 -0400
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 174)
+Completed 200 OK in 2882ms (Views: 2881.0ms | ActiveRecord: 0.0ms | Allocations: 76961)
+
+
+Started GET "/" for ::1 at 2021-07-21 15:54:44 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 654)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 561)
+Completed 200 OK in 3806ms (Views: 3795.7ms | ActiveRecord: 0.0ms | Allocations: 105738)
+
+
+Started GET "/" for ::1 at 2021-07-21 16:13:57 -0400
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 174)
+Completed 200 OK in 3050ms (Views: 3049.5ms | ActiveRecord: 0.0ms | Allocations: 76923)
+
+
+Started GET "/" for ::1 at 2021-07-21 16:14:28 -0400
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 174)
+Completed 200 OK in 3006ms (Views: 3004.4ms | ActiveRecord: 0.0ms | Allocations: 77339)
+
+
+Started GET "/home/about" for ::1 at 2021-07-21 16:21:32 -0400
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 99)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 245)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 8562)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-07-21 16:21:34 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 202)
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 518)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 12.3ms | Allocations: 4987)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 200)
+Completed 200 OK in 51ms (Views: 27.7ms | ActiveRecord: 8.4ms | Allocations: 18867)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-07-21 16:21:37 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 216)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1831)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 200)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.0ms | Allocations: 10736)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-07-21 16:21:39 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 81)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 180)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 8860)
+
+
+Started GET "/home/about" for ::1 at 2021-07-21 16:21:39 -0400
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 216)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 7606)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-07-21 16:34:14 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 81)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1116)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 181)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.0ms | Allocations: 8853)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-07-21 16:34:15 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 81)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1116)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 180)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 8856)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-07-21 16:41:38 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 81)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1116)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 181)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 8851)
+
+
