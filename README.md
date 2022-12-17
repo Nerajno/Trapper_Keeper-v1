@@ -22,8 +22,12 @@ Created to act as demonstrator for a mobile compatible fullstack Rails app. It u
 - [Bootstrap](https://dev.to/antman/using-bootstrap-4-in-rails-6-39hk) ~ specifically [Bootstarp Ruby Gem](https://github.com/twbs/bootstrap-rubygem)
 - [Devise gem](https://github.com/heartcombo/devise) ~ for authorization/authentication.
 
+## Start/Initialization
+
+## Tests
+
 ## Features
-- Users can create, update and delete a profile for their selves, it also has the capability for password recovery.
+- Users can create, update and delete a profile for theirselves, it also has the capability for password recovery.
 - Users have the ability to create profiles, update profiles for their friends and delete these profiles.
 
 
@@ -32,6 +36,8 @@ Created to act as demonstrator for a mobile compatible fullstack Rails app. It u
 - **[Mike Rogers](https://mikerogers.io/)** ~ for being my go-to person when stuff breaks and I need another pair of eyes.
 - **[Tun](https://github.com/tunkhine126)** ~ helping me when the structure of things are off.
 - **[Alex](https://github.com/meg-gutshall/)** ~ pushing me to become a better dev.
+
+
 
 
 ## License
