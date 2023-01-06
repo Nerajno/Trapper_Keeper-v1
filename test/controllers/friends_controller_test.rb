@@ -28,7 +28,7 @@ class FriendsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  TODO: figure this out
+  # TODO: figure this out
   # test "should get edit" do
   #   get edit_friend_url(@friend)
   #   assert_response :success
