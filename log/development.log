@@ -1584,3 +1584,297 @@ puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
 puma (4.3.12) lib/puma/server.rb:476:in `process_client'
 puma (4.3.12) lib/puma/server.rb:332:in `block in run'
 puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-01-05 17:35:07 -0500
+  
+PG::ConnectionBad (connection to server at "127.0.0.1", port 5432 failed: FATAL:  role "postgres" does not exist
+):
+  
+pg (0.18.4) lib/pg.rb:45:in `initialize'
+pg (0.18.4) lib/pg.rb:45:in `new'
+pg (0.18.4) lib/pg.rb:45:in `connect'
+activerecord (6.0.6) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:1125:in `retrieve_connection'
+activerecord (6.0.6) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.6) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.6) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.4) lib/rack/proxy.rb:78:in `call'
+railties (6.0.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-01-05 17:37:44 -0500
+  
+ActiveRecord::NoDatabaseError (connection to server at "127.0.0.1", port 5432 failed: FATAL:  database "friends_development" does not exist
+):
+  
+activerecord (6.0.6) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.6) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:1125:in `retrieve_connection'
+activerecord (6.0.6) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.6) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.6) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.4) lib/rack/proxy.rb:78:in `call'
+railties (6.0.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (355.5ms)[0m  [1m[35mCREATE DATABASE "friends_development" ENCODING = 'unicode'[0m
+  [1m[35m (162.0ms)[0m  [1m[35mCREATE DATABASE "friends_test" ENCODING = 'unicode'[0m
+  [1m[35m (112.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3619984718955341100)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateFriends (20210118183537)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.4ms)[0m  [1m[35mCREATE TABLE "friends" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "phone" character varying, "twitter" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (17.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210118183537"]]
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateUsers (20210119155609)
+  [1m[35m (32.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (21.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210119155609"]]
+  [1m[35m (24.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUserIdToFriends (20210124133537)
+  [1m[35m (3.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.1ms)[0m  [1m[35mALTER TABLE "friends" ADD "user_id" integer[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE  INDEX  "index_friends_on_user_id" ON "friends"  ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210124133537"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (7.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-01-05 23:17:35.507014"], ["updated_at", "2023-01-05 23:17:35.507014"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(3619984718955341100)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-01-05 18:27:28 -0500
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 13.5ms | Allocations: 656)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nerajnojohnson/Dev/Workbench/Trapper_Keeper/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: 2ca22b8d6e97b150a88a
+Version: webpack 4.46.0
+Time: 16251ms
+Built at: 05/01/2023 18:28:25
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d6caf8b93f8cd17069ba.js    672 KiB  application  [emitted] [immutable]  application
+js/application-d6caf8b93f8cd17069ba.js.map    778 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-d6caf8b93f8cd17069ba.js js/application-d6caf8b93f8cd17069ba.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 990 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 315 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 474 bytes {application} [built]
+    + 8 hidden modules
+
+  Rendered home/_header.html.erb (Duration: 3.9ms | Allocations: 622)
+Completed 200 OK in 56747ms (Views: 56696.7ms | ActiveRecord: 0.0ms | Allocations: 101672)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-01-05 18:28:57 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.1ms | Allocations: 623)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 267.6ms | Allocations: 8647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 10.9ms | Allocations: 260)
+Completed 200 OK in 493ms (Views: 371.5ms | ActiveRecord: 82.9ms | Allocations: 23721)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-01-05 18:28:59 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.4ms | Allocations: 194)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 139)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.3ms | Allocations: 2254)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 260)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms | Allocations: 11544)
+
+
+Started GET "/home/about" for ::1 at 2023-01-05 18:29:00 -0500
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 44.9ms | Allocations: 95)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 8.1ms | Allocations: 304)
+Completed 200 OK in 254ms (Views: 252.5ms | ActiveRecord: 0.0ms | Allocations: 9257)
+
+
+Started GET "/" for ::1 at 2023-01-05 18:29:04 -0500
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 83)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 234)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.0ms | Allocations: 8323)
+
+
+Started GET "/" for ::1 at 2023-01-05 18:31:28 -0500
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 656)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 3.4ms | Allocations: 617)
+Completed 200 OK in 331ms (Views: 185.1ms | ActiveRecord: 0.0ms | Allocations: 23762)
+
+

@@ -313,3 +313,248 @@ DELETE FROM "users";
 INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2021-02-21 17:03:48.882167', '2021-02-21 17:03:48.882167', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2021-02-21 17:03:48.882167', '2021-02-21 17:03:48.882167', DEFAULT);
 INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2021-02-21 17:03:48.882280', '2021-02-21 17:03:48.882280'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2021-02-21 17:03:48.882280', '2021-02-21 17:03:48.882280')[0m
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (131.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "friends_test"[0m
+  [1m[35m (318.2ms)[0m  [1m[35mCREATE DATABASE "friends_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "friends" CASCADE[0m
+  [1m[35m (18.7ms)[0m  [1m[35mCREATE TABLE "friends" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "phone" character varying, "twitter" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "user_id" integer)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE  INDEX  "index_friends_on_user_id" ON "friends"  ("user_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (10.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210124133537)[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210118183537),
+(20210119155609);
+
+[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", "2023-01-05 23:18:30.592395"], ["updated_at", "2023-01-05 23:18:30.592395"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "ae62d1120bed8cc8c02925e914a525668a89011f"], ["created_at", "2023-01-05 23:18:30.601052"], ["updated_at", "2023-01-05 23:18:30.601052"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (343.8ms)[0m  [1m[35mCREATE DATABASE "friends_test-1" ENCODING = 'unicode'[0m
+  [1m[35m (531.2ms)[0m  [1m[35mCREATE DATABASE "friends_test-0" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35mSQL (4.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (7.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "friends" CASCADE[0m
+  [1m[35m (72.1ms)[0m  [1m[35mCREATE TABLE "friends" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "phone" character varying, "twitter" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "user_id" integer)[0m
+  [1m[35m (2.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "friends" CASCADE[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_friends_on_user_id" ON "friends"  ("user_id")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (21.8ms)[0m  [1m[35mCREATE TABLE "friends" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "phone" character varying, "twitter" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "user_id" integer)[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE  INDEX  "index_friends_on_user_id" ON "friends"  ("user_id")[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (73.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35m (80.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210124133537)[0m
+  [1m[35m (9.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210118183537),
+(20210119155609);
+
+[0m
+  [1m[35m (15.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210124133537)[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210118183537),
+(20210119155609);
+
+[0m
+  [1m[35m (47.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (80.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (2.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Create (2.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", "2023-01-05 23:18:35.465802"], ["updated_at", "2023-01-05 23:18:35.465802"]]
+  [1m[35m (9.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "ae62d1120bed8cc8c02925e914a525668a89011f"], ["created_at", "2023-01-05 23:18:35.503419"], ["updated_at", "2023-01-05 23:18:35.503419"]]
+  [1m[36mActiveRecord::InternalMetadata Create (2.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", "2023-01-05 23:18:35.487503"], ["updated_at", "2023-01-05 23:18:35.487503"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "ae62d1120bed8cc8c02925e914a525668a89011f"], ["created_at", "2023-01-05 23:18:35.527342"], ["updated_at", "2023-01-05 23:18:35.527342"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.2ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:18:36.712805', '2023-01-05 23:18:36.712805', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:18:36.712805', '2023-01-05 23:18:36.712805', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:18:36.737121', '2023-01-05 23:18:36.737121'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:18:36.737121', '2023-01-05 23:18:36.737121')[0m
+  [1m[35m (3.1ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:18:36.726406', '2023-01-05 23:18:36.726406', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:18:36.726406', '2023-01-05 23:18:36.726406', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:18:36.744164', '2023-01-05 23:18:36.744164'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:18:36.744164', '2023-01-05 23:18:36.744164')[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.6ms)[0m  [1m[35mALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.0ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:18:37.128716', '2023-01-05 23:18:37.128716', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:18:37.128716', '2023-01-05 23:18:37.128716', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:18:37.128802', '2023-01-05 23:18:37.128802'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:18:37.128802', '2023-01-05 23:18:37.128802')[0m
+  [1m[35m (5.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (15.0ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:18:37.127298', '2023-01-05 23:18:37.127298', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:18:37.127298', '2023-01-05 23:18:37.127298', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:18:37.127391', '2023-01-05 23:18:37.127391'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:18:37.127391', '2023-01-05 23:18:37.127391')[0m
+  [1m[35m (2.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.1ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:18:37.188645', '2023-01-05 23:18:37.188645', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:18:37.188645', '2023-01-05 23:18:37.188645', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:18:37.188779', '2023-01-05 23:18:37.188779'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:18:37.188779', '2023-01-05 23:18:37.188779')[0m
+  [1m[35m (7.7ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:18:37.225003', '2023-01-05 23:18:37.225003', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:18:37.225003', '2023-01-05 23:18:37.225003', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:18:37.225086', '2023-01-05 23:18:37.225086'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:18:37.225086', '2023-01-05 23:18:37.225086')[0m
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (26.8ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:18:37.274583', '2023-01-05 23:18:37.274583', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:18:37.274583', '2023-01-05 23:18:37.274583', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:18:37.274667', '2023-01-05 23:18:37.274667'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:18:37.274667', '2023-01-05 23:18:37.274667')[0m
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.1ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:18:37.322041', '2023-01-05 23:18:37.322041', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:18:37.322041', '2023-01-05 23:18:37.322041', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:18:37.322149', '2023-01-05 23:18:37.322149'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:18:37.322149', '2023-01-05 23:18:37.322149')[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (75.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (28.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.3ms)[0m  [1m[35mALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (40.8ms)[0m  [1m[35mTRUNCATE TABLE "friends", "users"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (40.7ms)[0m  [1m[35mTRUNCATE TABLE "friends", "users"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "friends" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "friends" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.9ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (93.4ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:25:25.607836', '2023-01-05 23:25:25.607836', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:25:25.607836', '2023-01-05 23:25:25.607836', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:25:25.647114', '2023-01-05 23:25:25.647114'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:25:25.647114', '2023-01-05 23:25:25.647114')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (106.8ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:25:25.608639', '2023-01-05 23:25:25.608639', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:25:25.608639', '2023-01-05 23:25:25.608639', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:25:25.636003', '2023-01-05 23:25:25.636003'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:25:25.636003', '2023-01-05 23:25:25.636003')[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (20.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (9.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.1ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:25:26.144391', '2023-01-05 23:25:26.144391', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:25:26.144391', '2023-01-05 23:25:26.144391', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:25:26.144514', '2023-01-05 23:25:26.144514'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:25:26.144514', '2023-01-05 23:25:26.144514')[0m
+  [1m[35m (5.2ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:25:26.139682', '2023-01-05 23:25:26.139682', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:25:26.139682', '2023-01-05 23:25:26.139682', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:25:26.140084', '2023-01-05 23:25:26.140084'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:25:26.140084', '2023-01-05 23:25:26.140084')[0m
+  [1m[35m (1.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (10.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:25:26.193485', '2023-01-05 23:25:26.193485', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:25:26.193485', '2023-01-05 23:25:26.193485', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:25:26.193579', '2023-01-05 23:25:26.193579'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:25:26.193579', '2023-01-05 23:25:26.193579')[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (11.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:25:26.272385', '2023-01-05 23:25:26.272385', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:25:26.272385', '2023-01-05 23:25:26.272385', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:25:26.272491', '2023-01-05 23:25:26.272491'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:25:26.272491', '2023-01-05 23:25:26.272491')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.2ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:25:26.351292', '2023-01-05 23:25:26.351292', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:25:26.351292', '2023-01-05 23:25:26.351292', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:25:26.351380', '2023-01-05 23:25:26.351380'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:25:26.351380', '2023-01-05 23:25:26.351380')[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (116.6ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "friends" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (6.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.9ms)[0m  [1m[31mDELETE FROM "friends";
+DELETE FROM "users";
+INSERT INTO "friends" ("id", "first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:25:26.282638', '2023-01-05 23:25:26.282638', DEFAULT), (298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2023-01-05 23:25:26.282638', '2023-01-05 23:25:26.282638', DEFAULT);
+INSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:25:26.282864', '2023-01-05 23:25:26.282864'), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2023-01-05 23:25:26.282864', '2023-01-05 23:25:26.282864')[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
