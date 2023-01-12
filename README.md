@@ -5,7 +5,7 @@
 ### Description
 
 A fullstack Rails app that demonstrates CRUD capabilities, authentication and authorization and uses custom CSS.
-Live version ~> [TrapperKeepr](https://trapperkeepr.herokuapp.com/)
+Live version ~> [TrapperKeepr](https://trapper-keepr.fly.dev//)
 
 
 ### The Why
@@ -35,7 +35,7 @@ Created to act as demonstrator for a mobile compatible fullstack Rails app. It u
 - **[Meg Gutshall](https://github.com/meg-gutshall/)** ~ for this ReadMe template and pointers to figure out whats wrong.
 - **[Mike Rogers](https://mikerogers.io/)** ~ for being my go-to person when stuff breaks and I need another pair of eyes.
 - **[Tun](https://github.com/tunkhine126)** ~ helping me when the structure of things are off.
-- **[Alex](https://github.com/meg-gutshall/)** ~ pushing me to become a better dev.
+- **[Alex](https://github.com//)** ~ pushing me to become a better dev.
 
 
 
@@ -86,3 +86,5 @@ SOFTWARE.
 - [ ] Change colors via color theory to fit the project's target audience.
 - [ ] Fix about us and the other page.
 
+## Work status
+- Need to implement postgresql user and server.
