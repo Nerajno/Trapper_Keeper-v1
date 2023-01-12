@@ -5,7 +5,7 @@
 ### Description
 
 A fullstack Rails app that demonstrates CRUD capabilities, authentication and authorization and uses custom CSS.
-Live version ~> [TrapperKeepr](https://trapperkeepr.herokuapp.com/)
+Live version ~> [TrapperKeepr](https://trapper-keepr.fly.dev//)
 
 
 ### The Why
