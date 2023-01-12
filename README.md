@@ -68,7 +68,7 @@ SOFTWARE.
 
 
 ### Bugs\Todos
-- [x] Add user's actual name to home/index page. 
+- [x] Add user's actual name to home/index page as a greeting. 
 - [x] Format the navbar for a better look.... Remove Search item.
 - [x] Add thing to rails app to keep it awake on Heroku.  
 - [x] Get it reviewed by others.
@@ -76,7 +76,7 @@ SOFTWARE.
 - [x] Write a completed ReadMe ~ See below.
 - [ ] Integrate tests via capybara.
 - [ ] Create a local start/localhost set 
-- [x] Add CI/CD or action for continous deployment via github to Heroku.
+- [x] Add CI/CD or action for continous deployment via github to fly.io.
 - [ ] Add image uploader/avatar generator for each friend created. 
 - [ ] Add image uploader/avatar generator for each user created. 
 - [ ] Add user stories and do a sketch for app usage. 
