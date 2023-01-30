@@ -9,7 +9,7 @@ Live version ~> [TrapperKeepr](https://trapper-keepr.fly.dev//)
 
 
 ### The Why
-Created to act as demonstrator for a mobile compatible fullstack Rails app. It utlizes the [devise gem](https://github.com/heartcombo/devise) for authorization and authentication, Bootstrap for styling, Postgresql for datbase purposes, Heroku for hosting and a configured cron-job to heroku based readily available.
+Created to act as demonstrator for a mobile compatible fullstack Rails app. It utilizes the [devise gem](https://github.com/heartcombo/devise) for authorization and authentication, Bootstrap for styling, Postgresql for database purposes, Heroku for hosting and a configured cron-job to heroku based readily available.
 
 ## Screenshots/Demo
 ![ScreenShot of the app](https://github.com/Nerajno/Trapper_Keeper/blob/main/app/assets/images/AppScreenshots/trapperkeepr.png)
@@ -17,12 +17,13 @@ Created to act as demonstrator for a mobile compatible fullstack Rails app. It u
 ## Built With
 - [Ruby](https://ruby-doc.org/) ~ this app utilises Ruby 3.0.0.
 - [Rails](https://guides.rubyonrails.org/)
-- [Postgresql](https://www.postgresql.org/docs/13/index.html) ~ this app utilises vesion 12 of Posgresql.
-- [Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails6) ~ Hosting.
+- [Postgresql](https://www.postgresql.org/docs/13/index.html) ~ this app utilises vesion 14 of Posgresql.
+~~- [Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails6) ~ Hosting.~~
+- [Fly.io](https://fly.io/docs/rails/getting-started/)
 - [Bootstrap](https://dev.to/antman/using-bootstrap-4-in-rails-6-39hk) ~ specifically [Bootstarp Ruby Gem](https://github.com/twbs/bootstrap-rubygem)
 - [Devise gem](https://github.com/heartcombo/devise) ~ for authorization/authentication.
 
-## Start/Initialization
+## Local Start/Initialization 
 
 ## Tests
 
@@ -30,7 +31,7 @@ Created to act as demonstrator for a mobile compatible fullstack Rails app. It u
 - Users can create, update and delete a profile for theirselves, it also has the capability for password recovery.
 - Users have the ability to create profiles, update profiles for their friends and delete these profiles.
 
-
+## Issues
 ## Acknowledgments
 - **[Meg Gutshall](https://github.com/meg-gutshall/)** ~ for this ReadMe template and pointers to figure out whats wrong.
 - **[Mike Rogers](https://mikerogers.io/)** ~ for being my go-to person when stuff breaks and I need another pair of eyes.
@@ -80,11 +81,11 @@ SOFTWARE.
 - [ ] Add image uploader/avatar generator for each friend created. 
 - [ ] Add image uploader/avatar generator for each user created. 
 - [ ] Add user stories and do a sketch for app usage. 
-- [ ] Add other usecases to this ReadMe.  
+- [ ] Add other use cases to this ReadMe.  
 - [ ] Add a version badge.
 - [ ] Add a website up or down badge.
 - [ ] Change colors via color theory to fit the project's target audience.
 - [ ] Fix about us and the other page.
 
 ## Work status
-- Need to implement postgresql user and server.
+- V1 is done and up.
