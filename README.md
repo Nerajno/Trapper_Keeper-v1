@@ -76,7 +76,7 @@ SOFTWARE.
 - [x] Get it reviewed by others.... again
 - [x] Write a completed ReadMe ~ See below.
 - [ ] Integrate tests via capybara.
-- [ ] Create a local start/localhost set 
+- [x] Create a local start/localhost set 
 - [x] Add CI/CD or action for continous deployment via github to fly.io.
 - [ ] Add image uploader/avatar generator for each friend created. 
 - [ ] Add image uploader/avatar generator for each user created. 
