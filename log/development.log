@@ -1888,3 +1888,75 @@ Processing by FriendsController#index as HTML
 Completed 200 OK in 243ms (Views: 201.5ms | ActiveRecord: 0.0ms | Allocations: 23670)
 
 
+Started GET "/" for ::1 at 2023-03-29 22:14:02 -0400
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (Duration: 23.4ms | Allocations: 657)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nerajnojohnson/Dev/Workbench/Trapper_Keeper/public/packs
+[Webpacker] Calling `DidYouMean::SPELL_CHECKERS.merge!(error_name => spell_checker)' has been deprecated. Please call `DidYouMean.correct_error(error_name, spell_checker)' instead.
+/Users/nerajnojohnson/.rbenv/versions/3.0.0/lib/ruby/3.0.0/set.rb:648: warning: already initialized constant Set::InspectKey
+/Users/nerajnojohnson/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/set-1.0.3/lib/set.rb:815: warning: previous definition of InspectKey was here
+/Users/nerajnojohnson/.rbenv/versions/3.0.0/lib/ruby/3.0.0/pathname.rb:20: warning: already initialized constant Pathname::TO_PATH
+/Users/nerajnojohnson/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/pathname-0.2.1/lib/pathname.rb:20: warning: previous definition of TO_PATH was here
+/Users/nerajnojohnson/.rbenv/versions/3.0.0/lib/ruby/3.0.0/pathname.rb:22: warning: already initialized constant Pathname::SAME_PATHS
+/Users/nerajnojohnson/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/pathname-0.2.1/lib/pathname.rb:22: warning: previous definition of SAME_PATHS was here
+/Users/nerajnojohnson/.rbenv/versions/3.0.0/lib/ruby/3.0.0/pathname.rb:34: warning: already initialized constant Pathname::SEPARATOR_LIST
+/Users/nerajnojohnson/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/pathname-0.2.1/lib/pathname.rb:34: warning: previous definition of SEPARATOR_LIST was here
+/Users/nerajnojohnson/.rbenv/versions/3.0.0/lib/ruby/3.0.0/pathname.rb:35: warning: already initialized constant Pathname::SEPARATOR_PAT
+/Users/nerajnojohnson/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/pathname-0.2.1/lib/pathname.rb:35: warning: previous definition of SEPARATOR_PAT was here
+/Users/nerajnojohnson/.rbenv/versions/3.0.0/lib/ruby/3.0.0/pathname.rb:41: warning: already initialized constant Pathname::ABSOLUTE_PATH
+/Users/nerajnojohnson/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/pathname-0.2.1/lib/pathname.rb:41: warning: previous definition of ABSOLUTE_PATH was here
+
+[Webpacker] Hash: 2ca22b8d6e97b150a88a
+Version: webpack 4.46.0
+Time: 7995ms
+Built at: 03/29/2023 10:14:21 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d6caf8b93f8cd17069ba.js    672 KiB  application  [emitted] [immutable]  application
+js/application-d6caf8b93f8cd17069ba.js.map    778 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-d6caf8b93f8cd17069ba.js js/application-d6caf8b93f8cd17069ba.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 990 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 315 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 474 bytes {application} [built]
+    + 8 hidden modules
+
+  Rendered home/_header.html.erb (Duration: 3.3ms | Allocations: 617)
+Completed 200 OK in 18091ms (Views: 18008.2ms | ActiveRecord: 0.0ms | Allocations: 25033)
+
+
+Started GET "/home/about" for ::1 at 2023-03-29 22:14:32 -0400
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 95)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 304)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.0ms | Allocations: 9255)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-03-29 22:14:35 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.4ms | Allocations: 201)
+  Rendered devise/shared/_links.html.erb (Duration: 2.3ms | Allocations: 527)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 54.7ms | Allocations: 5345)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 260)
+Completed 200 OK in 184ms (Views: 122.9ms | ActiveRecord: 32.3ms | Allocations: 19870)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-03-29 22:14:37 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 234)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2146)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 260)
+Completed 200 OK in 36ms (Views: 28.8ms | ActiveRecord: 0.0ms | Allocations: 11724)
+
+

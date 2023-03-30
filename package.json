@@ -1,5 +1,5 @@
 {
-  "name": "Mike and Friends",
+  "name": "mike_and_friends",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
