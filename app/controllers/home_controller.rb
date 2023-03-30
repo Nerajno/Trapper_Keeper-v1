@@ -3,6 +3,8 @@ class HomeController < ApplicationController
   end
 
   def about
-    @about_me = "I am the stone that builder refuse."
+    @about_me = "Hi, I am Nerando and I am a software developer. I build stuff to 
+    learn and understand more about my toolkit. You can find me on twitter via @Nerajno.
+    "
   end
 end
