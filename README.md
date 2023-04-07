@@ -9,7 +9,7 @@ Live version ~> [TrapperKeepr](https://trapper-keepr.fly.dev//)
 
 
 ### The Why
-Created to act as demonstrator for a mobile compatible fullstack Rails app. It utilizes the [devise gem](https://github.com/heartcombo/devise) for authorization and authentication, Bootstrap for styling, Postgresql for database purposes, Heroku for hosting and a configured cron-job to heroku based readily available.
+Created to act as demonstrator for a mobile compatible fullstack Rails app. It utilizes the [devise gem](https://github.com/heartcombo/devise) for authorization and authentication, Bootstrap for styling, Postgresql for database purposes, Heroku for hosting and a configured cron-job to heroku based readily available ( had to update this to fly.io due to Herkou's new policies).
 
 ## Screenshots/Demo
 ![ScreenShot of the app](https://github.com/Nerajno/Trapper_Keeper/blob/main/app/assets/images/AppScreenshots/trapperkeepr.png)
