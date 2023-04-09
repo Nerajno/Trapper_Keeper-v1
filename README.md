@@ -1,14 +1,6 @@
 # Trapper Keepr ~  V1
 
-
 ## A full-stack Rails based address book.
-<p align="center">
-  <a href="https://github.com/nerajno/Trapper_Keeper-v1/0.1.0">
-    <img alt="Releases" src="https://img.shields.io/github/v/release/nerajno/Trapper_Keeper-v1/?label=release&logo=DocuSign&logoColor=%23fff&style=for-the-badge" />
-  </a>
-  <a href=""><img alt="" src="" /></a>
-  <a href=""><img alt="" src="" /></a>
-</p>
 
 ### Description
 
@@ -26,7 +18,8 @@ Created to act as demonstrator for a mobile compatible fullstack Rails app. It u
 - [Ruby](https://ruby-doc.org/) ~ this app utilises Ruby 3.0.0.
 - [Rails](https://guides.rubyonrails.org/)
 - [Postgresql](https://www.postgresql.org/docs/13/index.html) ~ this app utilises vesion 14 of Posgresql.
-- [Fly.io](https://fly.io/docs/rails/getting-started/) ~~[Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails6) ~ Hosting.~~
+~~- [Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails6) ~ Hosting.~~
+- [Fly.io](https://fly.io/docs/rails/getting-started/)
 - [Bootstrap](https://dev.to/antman/using-bootstrap-4-in-rails-6-39hk) ~ specifically [Bootstarp Ruby Gem](https://github.com/twbs/bootstrap-rubygem)
 - [Devise gem](https://github.com/heartcombo/devise) ~ for authorization/authentication.
 
