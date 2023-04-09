@@ -2,7 +2,13 @@
 
 
 ## A full-stack Rails based address book.
-![GitHub manifest version](https://img.shields.io/github/manifest-json/v/nerajno/Trapper_Keeper-v1?style=plastic)
+<p align="center">
+  <a href="https://github.com/nerajno/Trapper_Keeper-v1/0.1.0">
+    <img alt="Releases" src="https://img.shields.io/github/v/release/nerajno/Trapper_Keeper-v1/?label=release&logo=DocuSign&logoColor=%23fff&style=for-the-badge" />
+  </a>
+  <a href=""><img alt="" src="" /></a>
+  <a href=""><img alt="" src="" /></a>
+</p>
 
 ### Description
 
