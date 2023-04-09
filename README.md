@@ -16,8 +16,8 @@ Created to act as demonstrator for a mobile compatible fullstack Rails app. It u
 
 ## Built With
 - [Ruby](https://ruby-doc.org/) ~ this app utilises Ruby 3.0.0.
-- [Rails](https://guides.rubyonrails.org/)
-- [Postgresql](https://www.postgresql.org/docs/13/index.html) ~ this app utilises vesion 14 of Posgresql.
+- [Rails](https://guides.rubyonrails.org/) ~ 7.04
+- [Postgresql](https://www.postgresql.org/docs/13/index.html) ~ this app utilises version 14 of Posgresql.
 ~~- [Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails6) ~ Hosting.~~
 - [Fly.io](https://fly.io/docs/rails/getting-started/)
 - [Bootstrap](https://dev.to/antman/using-bootstrap-4-in-rails-6-39hk) ~ specifically [Bootstarp Ruby Gem](https://github.com/twbs/bootstrap-rubygem)
