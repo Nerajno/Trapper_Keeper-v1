@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.0'
+ruby '3.4.0'
 gem 'pg', '~> 0.18.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
@@ -45,7 +45,7 @@ group :development do
 end
 
 #online stuff// production
-group :production do 
+group :production do
  # gem 'pg', '~> 0.18.4'
 end
 
@@ -63,7 +63,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #mystuff
 #used for pswd integration
-gem 'devise', '~> 4.2', ">= 4.7.3" 
+gem 'devise', '~> 4.2', ">= 4.7.3"
 gem 'bootstrap', '~> 4.0'
 gem 'jquery-rails'
 gem 'scss-lint', '~> 0.38.0'

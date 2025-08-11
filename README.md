@@ -23,7 +23,8 @@ Created to act as demonstrator for a mobile compatible fullstack Rails app. It u
 - [Bootstrap](https://dev.to/antman/using-bootstrap-4-in-rails-6-39hk) ~ specifically [Bootstarp Ruby Gem](https://github.com/twbs/bootstrap-rubygem)
 - [Devise gem](https://github.com/heartcombo/devise) ~ for authorization/authentication.
 
-## Local Start/Initialization 
+## Local Start/Initialization
+
 
 ## Tests
 
@@ -69,19 +70,19 @@ SOFTWARE.
 
 
 ### Bugs\Todos
-- [x] Add user's actual name to home/index page as a greeting. 
+- [x] Add user's actual name to home/index page as a greeting.
 - [x] Format the navbar for a better look.... Remove Search item.
-- [x] Add thing to rails app to keep it awake on Heroku.  
+- [x] Add thing to rails app to keep it awake on Heroku.
 - [x] Get it reviewed by others.
 - [x] Get it reviewed by others.... again
 - [x] Write a completed ReadMe ~ See below.
 - [ ] Integrate tests via capybara.
-- [x] Create a local start/localhost set 
+- [x] Create a local start/localhost set
 - [x] Add CI/CD or action for continous deployment via github to fly.io.
-- [ ] Add image uploader/avatar generator for each friend created. 
-- [ ] Add image uploader/avatar generator for each user created. 
-- [ ] Add user stories and do a sketch for app usage. 
-- [ ] Add other use cases to this ReadMe.  
+- [ ] Add image uploader/avatar generator for each friend created.
+- [ ] Add image uploader/avatar generator for each user created.
+- [ ] Add user stories and do a sketch for app usage.
+- [ ] Add other use cases to this ReadMe.
 - [ ] Add a version badge.
 - [ ] Add a website up or down badge.
 - [ ] Change colors via color theory to fit the project's target audience.
@@ -89,3 +90,5 @@ SOFTWARE.
 
 ## Work status
 - V1 is done and up.
+
+
