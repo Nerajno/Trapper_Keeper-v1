@@ -29,7 +29,7 @@ Created to act as demonstrator for a mobile compatible fullstack Rails app. It u
 ## Tests
 
 ## Features
-- Users can create, update and delete a profile for theirselves, it also has the capability for password recovery.
+- Users can create, update and delete a profile for their selves, it also has the capability for password recovery.
 - Users have the ability to create profiles, update profiles for their friends and delete these profiles.
 
 ## Issues
@@ -76,7 +76,6 @@ SOFTWARE.
 - [x] Get it reviewed by others.
 - [x] Get it reviewed by others.... again
 - [x] Write a completed ReadMe ~ See below.
-- [ ] Integrate tests via capybara.
 - [x] Create a local start/localhost set
 - [x] Add CI/CD or action for continous deployment via github to fly.io.
 - [ ] Add image uploader/avatar generator for each friend created.
@@ -87,8 +86,10 @@ SOFTWARE.
 - [ ] Add a website up or down badge.
 - [ ] Change colors via color theory to fit the project's target audience.
 - [ ] Fix about us and the other page.
+- [ ] Integrate tests via capybara.
 
 ## Work status
-- V1 is done and up.
+- [x] V1 is done and up.
+- [ ] V2 updated and done to standards above. 
 
 
